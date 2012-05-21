@@ -79,7 +79,7 @@ for( my $i = 0; $i <= @ip_lst; $i++){
 	$this_distro = lc($this_distro);
 
 		###	if distro is CENTOS or RHEL 5,
-		if( does_It_Have($this_distro, "centos") || ( does_It_Have($this_distro, "rhel") && $this_version =~ /^5\./ ) ){	
+		if( ( does_It_Have($this_distro, "centos") || does_It_Have($this_distro, "rhel") ) && $this_version =~ /^5\./ ){	
 
 			### if roll is NOT NC,		
 			if( does_It_Have($this_roll, "NC") != 1 ){
