@@ -1,3 +1,19 @@
+
+pre_test_setup
+==============
+
+## Description
+
+Placeholder for pre-test stage operations -- exchange keys, kernel update, reboot machines if necessary, etc.
+
+## Procedure
+
+1. Sync keys with the CLC: ssh to the CLC  and disable "StrictHostKeyChecking", remove the public key if it exists, copy the public key of the CLC to all other machines
+2. Sync keys with the CC
+
+<hr><hr><hr>
+
+
 # Eucalyptus Testunit Framework
 
 Eucalyptus Testunit Framework is designed to run a list of test scripts written by Eucalyptus developers.
